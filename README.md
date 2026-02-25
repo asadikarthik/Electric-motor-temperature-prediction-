@@ -1,149 +1,185 @@
-# Electric-Motor-Temperature-Prediction-using-Machine-Learning
+Electric Motor Temperature Prediction using Machine Learning
+Author
 
-## 📌 Project Overview
+Karthik
+GitHub: https://github.com/asadikarthik
 
-Electric motors are critical components in industrial and automation systems. Overheating can lead to reduced efficiency, equipment damage, and unexpected failures. This project uses **Machine Learning techniques** to predict the operating temperature of an electric motor based on sensor data, enabling **early fault detection and predictive maintenance**.
+Overview
 
----
+Electric motors are essential components in industrial automation, manufacturing systems, and electric vehicles. Excessive motor temperature can reduce efficiency, accelerate component wear, and cause unexpected failures.
 
-## 🎯 Objectives
+This project uses Machine Learning algorithms to predict electric motor temperature based on real-time and historical sensor data. The goal is to enable early fault detection and support predictive maintenance strategies to improve reliability and operational efficiency.
 
-* Predict electric motor temperature accurately using ML models
-* Prevent overheating and sudden motor failures
-* Improve motor efficiency and lifespan
-* Support predictive maintenance strategies
+Objectives
 
----
+Predict motor temperature using machine learning models
 
-## 🧠 Machine Learning Models Used
+Detect overheating conditions before failure occurs
 
-* Linear Regression
-* Decision Tree
-* Random Forest
-* Support Vector Machine (SVM)
+Improve motor lifespan and efficiency
 
-The models are trained on historical sensor data such as motor speed, torque, current, voltage, and environmental parameters.
+Support predictive maintenance systems
 
----
+Demonstrate real-world industrial ML application
 
-## 🛠️ Technologies Used
+Machine Learning Models Implemented
 
-* **Programming Language:** Python
-* **Machine Learning:** Scikit-learn, NumPy, Pandas
-* **Web Interface:** HTML, CSS
-* **Backend:** Flask
-* **Visualization:** Matplotlib / Seaborn
+The following regression models were trained and evaluated:
 
----
+Linear Regression
 
-## 📁 Project Structure
+Decision Tree Regressor
 
-```
-Electric Motor Temperature Prediction/
+Random Forest Regressor
+
+Support Vector Machine (SVM)
+
+These models use sensor and operational parameters such as:
+
+Motor speed
+
+Torque
+
+Current
+
+Voltage
+
+Environmental conditions
+
+Other operational sensor values
+
+Technologies Used
+
+Programming Language
+
+Python
+
+Machine Learning Libraries
+
+Scikit-learn
+
+NumPy
+
+Pandas
+
+Backend
+
+Flask
+
+Frontend
+
+HTML
+
+CSS
+
+Data Visualization
+
+Matplotlib
+
+Seaborn
+
+Project Structure
+Electric-Motor-Temperature-Prediction/
 │
-├── Code/                     # Frontend HTML files
+├── Code/                      # Frontend files
 │   ├── index.html
 │   ├── sensor.html
 │   └── Manual.html
 │
-├── Main/                     # Backend & ML code
+├── Main/                      # Backend and ML scripts
 │   ├── app.py
 │   ├── train_model.py
-│   ├── sensor_model_train.py
+│   └── sensor_model_train.py
 │
-├── Output/                   # Project screenshots
+├── Output/                    # Application screenshots
 │   ├── Home.png
 │   ├── Sensor.png
 │   ├── Manual.png
 │   └── Prediction_Result.png
 │
-├── data/                     # Dataset (ignored in GitHub)
-│
+├── data/                      # Dataset (not included)
 ├── .gitignore
 └── README.md
-```
+Features
 
----
+Machine learning based temperature prediction
 
-## 🖼️ Screenshots
+Manual input prediction interface
 
-**Home Page**
-![Home](Output/Home.png)
+Sensor-based prediction interface
 
-**Manual Input Page**
-![Manual](Output/Manual.png)
+Flask-based web application
 
-**Sensor Input Page**
-![Sensor](Output/Sensor.png)
+Multiple ML model comparison
 
-**Prediction Result**
-![Result](Output/Senor_Prediction_result.png)
+Clean and simple user interface
 
----
+Dataset and Model Files
 
-## 📊 Dataset & Model Files
+The dataset and trained model files are not included due to GitHub size limitations.
 
-⚠️ Due to GitHub size limitations, **dataset (`.csv`) and trained model files (`.pkl`) are not included** in this repository.
+Dataset used:
 
-* Dataset used: `measures_v2.csv`
-* Model files are generated locally after training
+measures_v2.csv
 
-To generate models locally, run:
+To train the models locally:
 
-```bash
 python train_model.py
 python sensor_model_train.py
-```
 
----
+This will generate the required .pkl model files.
 
-## 🚀 How to Run the Project
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/nehashinde8836/Electric-Motor-Temperature-Prediction-Using-Machine-Learning.git
-```
-
-2. Install required libraries
-
-```bash
+How to Run the Project
+Step 1: Clone the Repository
+git clone https://github.com/asadikarthik/Electric-Motor-Temperature-Prediction-using-Machine-Learning.git
+Step 2: Navigate to Project Directory
+cd Electric-Motor-Temperature-Prediction-using-Machine-Learning/Main
+Step 3: Install Dependencies
 pip install -r requirements.txt
-```
-
-3. Run the Flask application
-
-```bash
+Step 4: Run the Application
 python app.py
-```
-
-4. Open browser and go to
-
-```
+Step 5: Open in Browser
 http://127.0.0.1:5000
-```
+Application Use Cases
 
----
+Industrial motor health monitoring
 
-## ✅ Applications
+Predictive maintenance systems
 
-* Industrial motor monitoring
-* Predictive maintenance systems
-* Electric vehicles
-* Smart manufacturing
-* Automation industries
+Smart manufacturing environments
 
----
+Electric vehicle motor monitoring
 
-## 🔮 Future Enhancements
+Automation and robotics systems
 
-* Real-time sensor data integration
-* Cloud-based deployment
-* Advanced deep learning models
-* Live dashboards and analytics
+Future Improvements
 
----
+Real-time sensor integration (IoT)
 
-## 📌 Conclusion
+Cloud deployment (AWS, Azure, or GCP)
 
-This project demonstrates how **Machine Learning can be effectively used to predict electric motor temperature**, helping industries prevent failures, reduce downtime, and improve operational efficiency. It showcases the practical use of ML in real-world predictive maintenance application
+Deep learning model implementation
+
+Performance optimization
+
+Live dashboard with analytics
+
+REST API integration
+
+Learning Outcomes
+
+This project demonstrates practical implementation of:
+
+Machine Learning for predictive maintenance
+
+Regression model training and evaluation
+
+Flask web application deployment
+
+End-to-end ML project development
+
+Industrial use-case problem solving
+
+Conclusion
+
+This project shows how machine learning can be applied to predict electric motor temperature and help prevent failures before they occur. It provides a complete workflow including data processing, model training, and deployment through a web application, making it a strong example of applied machine learning in industrial systems.
